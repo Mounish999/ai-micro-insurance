@@ -1,116 +1,228 @@
-# PulseSure — Context-Aware Micro Insurance for Gig Workers
+PulseSure – Parametric Insurance for Gig Workers
+Problem
 
-## Overview
+India’s gig economy depends heavily on delivery partners working for platforms such as Swiggy, Zomato, Zepto, and Amazon. These workers earn on a daily basis and lack any form of income stability.
 
-PulseSure is a lightweight, AI-assisted micro-insurance prototype designed for gig workers who face daily income uncertainty.
+External disruptions such as heavy rainfall, extreme heat, high pollution levels, and local restrictions directly affect their ability to work. As a result, a worker earning around ₹700 per day can lose their entire income for the day due to circumstances beyond their control.
 
-Instead of traditional fixed insurance plans, PulseSure adapts to real-world conditions such as weather, air quality, and demand fluctuations. The system calculates weekly premiums dynamically and uses predefined triggers to automatically initiate payouts when risk conditions are met.
+Existing insurance systems are not designed to handle short-term, real-time income loss. There is currently no effective mechanism to protect gig workers from sudden disruptions in daily earnings.
 
-This project is built as a hackathon MVP, focusing on solving a real problem with a practical and scalable approach.
+Solution
 
----
+PulseSure is an AI-driven parametric insurance platform that provides real-time income protection for gig workers.
 
-## Problem Statement
+The system continuously monitors environmental conditions and worker activity. When predefined disruption conditions are met, compensation is automatically triggered without requiring manual claims.
 
-Gig workers depend heavily on external conditions that directly affect their income. Factors like heavy rain, high pollution, or sudden drops in demand can significantly reduce their earnings.
+PulseSure functions as a real-time financial safety net, ensuring gig workers are protected even during unpredictable disruptions.
 
-However, existing insurance systems:
-- Do not adapt to daily working conditions
-- Require manual claim processes
-- Are not affordable or flexible for short-term needs
+Target Persona
 
-There is a need for a system that provides fast, fair, and condition-based financial protection.
+The platform is designed for gig delivery workers operating on platforms such as Swiggy, Zomato, Zepto, and Amazon.
 
----
+Example Persona
 
-## Proposed Solution
+Rahul is a delivery partner in Mumbai earning approximately ₹700 per day. He works long hours to maximize his earnings. During heavy rainfall, delivery demand drops significantly, resulting in immediate income loss.
 
-PulseSure introduces a parametric micro-insurance model where:
+PulseSure ensures that workers like Rahul receive compensation when such disruptions occur.
 
-- Premiums are calculated dynamically on a weekly basis
-- Real-world data is used to assess risk
-- Claims are automatically triggered based on predefined conditions
+Weekly Insurance Plans
 
-This removes the need for manual claims and ensures faster compensation.
+Gig workers typically operate on short earning cycles. PulseSure offers flexible weekly plans:
 
----
+Basic Plan – ₹10 per week, covers up to ₹300 per day
 
-## Key Features
+Pro Plan – ₹20 per week, covers up to ₹500 per day
 
-- Dynamic premium calculation based on environmental and demand data
-- Trigger-based automatic payouts
-- Mobile-first design for accessibility
-- Simple and fast onboarding process
+Premium Plan – ₹30 per week, covers up to ₹700 per day
 
----
+This pricing model ensures affordability while providing meaningful coverage.
 
-## How It Works
+Parametric Disruption Triggers
 
-1. The user logs into the application
-2. The system collects real-time data such as:
-   - Weather conditions
-   - Air Quality Index (AQI)
-   - Local demand patterns
-3. A risk score is calculated
-4. Based on this score, a weekly premium is generated
-5. If predefined conditions are met (e.g., heavy rainfall or low demand), the system automatically initiates a payout
+The platform uses predefined thresholds to automatically detect disruptions:
 
----
+Rainfall greater than 80 mm
 
-## Innovation
+Temperature greater than 45°C
 
-The core innovation of this project lies in:
+Air Quality Index above 350
 
-- Moving from claim-based insurance to trigger-based insurance
-- Using real-time contextual data instead of static pricing
-- Designing for short-term, flexible coverage cycles
+Local curfew or delivery zone shutdown
 
----
+When any of these conditions are met, the system automatically activates a claim and initiates payout.
 
-## Technology Stack
+AI Integration
+Risk Assessment
 
-- Frontend: React / React Native
-- Backend: Spring Boot
-- Database: PostgreSQL
-- AI/ML: Python (Scikit-learn)
-- External APIs: Weather and AQI data APIs
+The system analyzes environmental data, historical trends, and geographic risk patterns to dynamically determine risk levels and pricing.
 
----
+Workers in lower-risk areas benefit from lower premiums, while higher-risk zones are priced accordingly.
 
-## MVP Scope (Phase 1)
+Fraud Detection
 
-In this phase, we focus on building a working prototype with:
+PulseSure identifies suspicious activity using multiple signals:
 
-- Basic user login functionality
-- Integration with a weather API
-- Simple rule-based premium calculation
-- Simulation of trigger-based payouts
+GPS inconsistencies
 
----
+Duplicate or repeated claims
 
-## Future Scope
+Weather-data mismatches
 
-- Advanced AI-based risk prediction
-- Real-time demand forecasting
-- Automated payout integration
-- Fraud detection mechanisms
-- Integration with gig platforms
+Abnormal activity patterns
 
----
+This ensures that only genuine claims are processed and the system remains sustainable.
 
-## Deployment
+System Workflow
 
-For this prototype, we use simple and fast deployment platforms:
+Worker registers on the platform
 
-- Backend is deployed using Render or Railway
-- Frontend is deployed using Vercel or Netlify
+Selects an insurance plan
 
-This allows quick testing and demonstration without complex infrastructure.
+Risk is evaluated and policy is activated
 
----
+System continuously monitors conditions
 
-## Conclusion
+Disruption is detected
 
-PulseSure demonstrates how insurance can be made more adaptive, accessible, and efficient for gig workers by leveraging real-time data and automation.
+Claim is automatically triggered
 
-The approach is scalable and can be extended to support millions of workers across different regions and sectors.
+Compensation is credited to the worker
+
+Technology Stack
+
+Frontend: React
+Backend: Spring Boot (Java)
+Database: MySQL (Workbench)
+AI Logic: Rule-based scoring engine implemented in Spring Boot
+APIs: Weather API, AQI API
+Payments: Razorpay (test integration)
+
+System Architecture
+Worker Mobile App
+        ↓
+React Frontend
+        ↓
+Spring Boot Backend
+        ↓
+Risk Engine Service
+Fraud Detection Service
+        ↓
+MySQL Database
+        ↓
+External APIs
+   - Weather API
+   - AQI API
+   - Payment Gateway
+Smart Earnings Protection
+
+In addition to environmental triggers, PulseSure introduces earnings-based disruption detection.
+
+The system monitors delivery activity and identifies sudden drops in order volume that may indicate disruptions such as platform outages, unexpected demand drops, or operational issues.
+
+Example Scenario
+
+Normal daily orders: 25
+Orders on a disrupted day: 5
+
+If a significant deviation from the worker’s normal activity is detected, the system flags it as a disruption and triggers compensation.
+
+How It Works
+
+Historical delivery data is analyzed
+
+Normal earning patterns are established
+
+Sudden deviations are detected
+
+Claims are automatically triggered
+
+This ensures protection against both environmental and demand-side disruptions.
+
+Market Crash Scenario
+
+A coordinated fraud attack involving multiple fake delivery accounts can exploit the system by submitting false claims using manipulated GPS data.
+
+Such attacks can lead to large-scale financial losses and threaten platform stability.
+
+Adversarial Defense and Anti-Spoofing Strategy
+Multi-Layer Fraud Detection
+
+PulseSure uses a multi-layer validation approach rather than relying solely on GPS data.
+
+Location Intelligence
+
+The system detects unrealistic movement patterns such as sudden location jumps and verifies route continuity to ensure alignment with real-world movement.
+
+Behavioral Analysis
+
+The platform identifies suspicious patterns such as:
+
+Excessive claims within short time intervals
+
+Identical behavior across multiple accounts
+
+Lack of natural variation in activity
+
+Device Fingerprinting
+
+The system detects:
+
+Multiple accounts linked to a single device
+
+Emulator-based activity
+
+Unusual login patterns
+
+Environment Cross-Verification
+
+Each claim is validated against external data sources:
+
+Rainfall claims are checked against weather APIs
+
+Pollution claims are verified using AQI data
+
+AI-Based Risk Scoring
+
+Each user is assigned a risk score based on behavior, location consistency, and device signals. This score is used to evaluate claim legitimacy.
+
+Fairness Mechanism
+
+To protect genuine users:
+
+Low-risk users receive full payouts
+
+Medium-risk users may undergo additional verification
+
+High-risk users are flagged for review
+
+Fraud Ring Detection
+
+The system analyzes clusters of users to detect coordinated fraud attempts based on shared behavior, timing, and location patterns.
+
+Impact
+
+Provides financial stability to gig workers
+
+Reduces vulnerability to income disruptions
+
+Builds trust within platform ecosystems
+
+Minimizes fraud-related losses
+
+Scales effectively across large user bases
+
+Future Scope
+
+Integration with major gig platforms
+
+Expansion across multiple regions
+
+Advanced predictive analytics
+
+Real-time monitoring dashboards
+
+Conclusion
+
+PulseSure combines parametric insurance with intelligent risk assessment and fraud-resistant architecture to deliver real-time income protection.
+
+By addressing both environmental disruptions and coordinated fraud risks, the platform ensures scalability, reliability, and trust in the gig economy.
