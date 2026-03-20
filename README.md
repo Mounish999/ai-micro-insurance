@@ -30,7 +30,7 @@ The platform is designed for gig delivery workers operating on platforms such as
 
 ## Example Persona
 
-**Rahul – Delivery Partner (Mumbai)**  
+**Akshay – Delivery Partner (Hyderabad)**  
 - Daily earnings: ₹700  
 - Works long hours to maximize income  
 
