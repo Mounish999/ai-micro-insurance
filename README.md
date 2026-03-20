@@ -109,9 +109,6 @@ This ensures that only genuine claims are processed and the system remains susta
 - **APIs:** Weather API, AQI API  
 - **Payments:** Razorpay (test integration)
 
----
-
----
 
 ## Smart Earnings Protection
 
