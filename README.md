@@ -1,3 +1,117 @@
+# PulseSure – Parametric Insurance for Gig Workers
+
+---
+
+## Problem
+
+India’s gig economy depends heavily on delivery partners working for platforms such as Swiggy, Zomato, Zepto, and Amazon. These workers earn on a daily basis and lack any form of income stability.
+
+External disruptions such as heavy rainfall, extreme heat, high pollution levels, and local restrictions directly affect their ability to work. As a result, a worker earning around ₹700 per day can lose their entire income for the day due to circumstances beyond their control.
+
+Existing insurance systems are not designed to handle short-term, real-time income loss. There is currently no effective mechanism to protect gig workers from sudden disruptions in daily earnings.
+
+---
+
+## Solution
+
+**PulseSure** is an AI-driven parametric insurance platform that provides real-time income protection for gig workers.
+
+The system continuously monitors environmental conditions and worker activity. When predefined disruption conditions are met, compensation is automatically triggered without requiring manual claims.
+
+**PulseSure** functions as a real-time financial safety net, ensuring gig workers are protected even during unpredictable disruptions.
+
+---
+
+## Target Persona
+
+The platform is designed for gig delivery workers operating on platforms such as **Swiggy, Zomato, Zepto, and Amazon**.
+
+---
+
+## Example Persona
+
+**Rahul – Delivery Partner (Mumbai)**  
+- Daily earnings: ₹700  
+- Works long hours to maximize income  
+
+During heavy rainfall, delivery demand drops significantly, resulting in immediate income loss.
+
+**PulseSure** ensures that workers like Rahul receive compensation when such disruptions occur.
+
+---
+
+## Weekly Insurance Plans
+
+Gig workers typically operate on short earning cycles. **PulseSure** offers flexible weekly plans:
+
+- **Basic Plan – ₹10/week → Covers ₹300/day**  
+- **Pro Plan – ₹20/week → Covers ₹500/day**  
+- **Premium Plan – ₹30/week → Covers ₹700/day**
+
+This pricing model ensures affordability while providing meaningful coverage.
+
+---
+
+## Parametric Disruption Triggers
+
+The platform uses predefined thresholds to automatically detect disruptions:
+
+- Rainfall greater than 80 mm  
+- Temperature greater than 45°C  
+- Air Quality Index above 350  
+- Local curfew or delivery zone shutdown  
+
+When any of these conditions are met, the system automatically activates a claim and initiates payout.
+
+---
+
+## AI Integration
+
+### Risk Assessment
+
+The system analyzes environmental data, historical trends, and geographic risk patterns to dynamically determine risk levels and pricing.
+
+Workers in lower-risk areas benefit from lower premiums, while higher-risk zones are priced accordingly.
+
+---
+
+### Fraud Detection
+
+**PulseSure** identifies suspicious activity using multiple signals:
+
+- GPS inconsistencies  
+- Duplicate or repeated claims  
+- Weather-data mismatches  
+- Abnormal activity patterns  
+
+This ensures that only genuine claims are processed and the system remains sustainable.
+
+---
+
+## System Workflow
+
+1. Worker registers on the platform  
+2. Selects an insurance plan  
+3. Risk is evaluated and policy is activated  
+4. System continuously monitors conditions  
+5. Disruption is detected  
+6. Claim is automatically triggered  
+7. Compensation is credited to the worker  
+
+---
+
+## Technology Stack
+
+- **Frontend:** React  
+- **Backend:** Spring Boot (Java)  
+- **Database:** MySQL (Workbench)  
+- **AI Logic:** Rule-based scoring engine implemented in Spring Boot  
+- **APIs:** Weather API, AQI API  
+- **Payments:** Razorpay (test integration)
+
+---
+
+## System Architecture
 
 ---
 
