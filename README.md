@@ -111,8 +111,6 @@ This ensures that only genuine claims are processed and the system remains susta
 
 ---
 
-## System Architecture
-
 ---
 
 ## Smart Earnings Protection
