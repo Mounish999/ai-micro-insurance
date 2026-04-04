@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "id": 1775320301520,
+      "name": "suppi ",
+      "email": "suppi@gmail.com",
+      "password": "$2b$10$i/Q2lGFM7U46eZAjWbJAS.NCfYwzA3QF9GTlPDlhE0rQWW2aOGg7S",
+      "role": "worker",
+      "dailyEarnings": 700
+    },
+    {
+      "id": 1775321332963,
+      "name": "kiranmai",
+      "email": "kiranmai@gmail.com",
+      "password": "$2b$10$BKKxhmZCxo.DCUMtWvzkEOGsUJ1/t0a9sSluGLKn.XBe97yGQcUyq",
+      "role": "worker",
+      "dailyEarnings": 700
+    },
+    {
+      "id": 1775321500000,
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "$2b$10$U2v4EffP29bgBchnocP/mOU2PaN54F.tQe.dNcw55YDQLm.D5DVzq",
+      "role": "admin"
+    },
+    {
+      "id": 1775321923769,
+      "name": "yasaswi",
+      "email": "yashu@gmail.com",
+      "password": "$2b$10$KUMZ5d4HyDA5/uqZyyeLnOvZ6ps4LOGeLjGqfim6m0N9LvnwZ6e7C",
+      "role": "worker",
+      "dailyEarnings": 700
+    }
+  ],
+  "policies": [
+    {
+      "id": 1,
+      "name": "Basic Plan",
+      "price": 10,
+      "coverage": 300,
+      "icon": "🛡️",
+      "userId": 1775320301520,
+      "userEmail": "suppi@gmail.com",
+      "purchaseDate": "2026-04-04T16:47:31.368Z",
+      "status": "Active"
+    }
+  ],
+  "stats": {
+    "totalPremiums": 10,
+    "totalPolicies": 8921
+  },
+  "conditions": {
+    "weather": "Clear",
+    "temp": "28°C",
+    "aqi": "Low",
+    "demand": "High",
+    "rainfall": 0,
+    "ordersToday": 25
+  },
+  "fraudAlerts": [
+    {
+      "id": "F-102",
+      "type": "GPS Mismatch",
+      "user": "Rohan S.",
+      "risk": "High",
+      "status": "Flagged"
+    },
+    {
+      "id": "F-103",
+      "type": "Duplicate Claim",
+      "user": "Priya K.",
+      "risk": "Medium",
+      "status": "Under Review"
+    },
+    {
+      "id": "F-104",
+      "type": "Suspicious Behavior",
+      "user": "Amit M.",
+      "risk": "High",
+      "status": "Blocked"
+    }
+  ],
+  "riskUsers": [
+    {
+      "category": "Low Risk Users",
+      "count": 7420,
+      "percentage": "83%",
+      "color": "var(--success)"
+    },
+    {
+      "category": "Medium Risk Users",
+      "count": 1150,
+      "percentage": "13%",
+      "color": "var(--warning)"
+    },
+    {
+      "category": "High Risk Users",
+      "count": 350,
+      "percentage": "4%",
+      "color": "var(--danger)"
+    }
+  ]
+}
